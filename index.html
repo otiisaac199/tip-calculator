@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="header__logo">
+          <p class="logo__text">Shop Restaurant</p>
+        </div>
+      </header>
+
+      <main class="main">
+        <form class="form">
+          <h1 class="form__title">tip calculator</h1>
+
+          <input
+            class="form__input"
+            placeholder="Enter name..."
+            name="name"
+            id="name"
+          />
+
+          <input
+            type="number"
+            class="form__input"
+            placeholder="Enter bill..."
+            name="bill"
+            id="bill"
+          />
+
+          <div class="form__waiter-name">
+            <select
+              class="form__input"
+              name="waiter-name-select"
+              id="waiter-name-select"
+            >
+              <option value="">Select waiter's name</option>
+              <option value="godwin">Webby</option>
+              <option value="godwin">Johnson</option>
+              <option value="godwin">Dominic</option>
+            </select>
+
+            <input
+              class="form__input"
+              placeholder="Enter  waiter's name..."
+              name="waiter-name"
+              id="waiter-name"
+            />
+          </div>
+
+          <select class="form__input" name="tip-percentage" id="tip-percentage">
+            <option value="">Select Tip percentage</option>
+            <option value="5">5%</option>
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+          </select>
+
+          <div class="form__submit">
+            <button class="form__submit-btn" type="submit">submit</button>
+          </div>
+        </form>
+      </main>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
